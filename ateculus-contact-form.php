@@ -4,6 +4,9 @@
  * Plugin URI:  https://ateculus.com
  * Description: Flexible contact form with Turnstile, SMTP support, and multi-channel notifications (Email, Discord, Slack). Use [ateculus_contact_form] shortcode anywhere.
  * Version:     1.1.1
+ * Requires at least: 6.0
+ * Tested up to:      7.0
+ * Requires PHP:      8.0
  * Author:      Ateculus
  * Author URI:  https://ateculus.com
  * License:     Ateculus Source License 1.0

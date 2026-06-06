@@ -15,7 +15,7 @@ A flexible WordPress contact form plugin with Cloudflare Turnstile spam protecti
 
 ## Requirements
 
-- WordPress 6.0+
+- WordPress 6.0+ (tested up to 7.0)
 - PHP 8.0+
 
 ## Installation
