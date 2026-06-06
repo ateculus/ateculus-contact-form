@@ -1,0 +1,204 @@
+/*
+ * Ateculus Contact Form — Frontend Styles
+ *
+ * Override colors/radius/font via CSS custom properties in your theme:
+ *
+ *   .acf-contact-wrapper {
+ *     --acf-primary: #your-color;
+ *   }
+ */
+
+.acf-contact-wrapper {
+	--acf-primary:      #4f46e5;
+	--acf-primary-dark: #4338ca;
+	--acf-success:      #16a34a;
+	--acf-error:        #dc2626;
+	--acf-bg:           #ffffff;
+	--acf-border:       #d1d5db;
+	--acf-border-focus: var(--acf-primary);
+	--acf-text:         #111827;
+	--acf-text-muted:   #6b7280;
+	--acf-label:        #374151;
+	--acf-radius:       8px;
+	--acf-font:         inherit;
+	--acf-gap:          20px;
+	--acf-transition:   0.2s ease;
+
+	font-family: var(--acf-font);
+	color: var(--acf-text);
+	max-width: 720px;
+}
+
+.acf-form-title {
+	margin-bottom: 28px;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: var(--acf-text);
+}
+
+/* Notices */
+.acf-notice {
+	padding: 14px 18px;
+	border-radius: var(--acf-radius);
+	margin-bottom: 20px;
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+
+.acf-notice--success {
+	background: #f0fdf4;
+	border: 1px solid #bbf7d0;
+	color: var(--acf-success);
+}
+
+.acf-notice--error {
+	background: #fef2f2;
+	border: 1px solid #fecaca;
+	color: var(--acf-error);
+}
+
+/* Field grid */
+.acf-fields-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--acf-gap);
+}
+
+@media (max-width: 600px) {
+	.acf-fields-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.acf-field-wrap {
+	min-width: 0;
+}
+
+.acf-col-half  { grid-column: span 1; }
+.acf-col-full  { grid-column: span 2; }
+.acf-col-third { grid-column: span 1; }
+
+@media (max-width: 600px) {
+	.acf-col-half,
+	.acf-col-full,
+	.acf-col-third {
+		grid-column: span 2;
+	}
+}
+
+.acf-field {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Labels */
+.acf-label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: var(--acf-label);
+}
+
+.acf-required {
+	color: var(--acf-error);
+	margin-left: 2px;
+}
+
+/* Inputs */
+.acf-input {
+	width: 100%;
+	padding: 10px 14px;
+	border: 1px solid var(--acf-border);
+	border-radius: var(--acf-radius);
+	background: var(--acf-bg);
+	color: var(--acf-text);
+	font-family: var(--acf-font);
+	font-size: 0.95rem;
+	line-height: 1.5;
+	transition: border-color var(--acf-transition), box-shadow var(--acf-transition);
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.acf-input:focus {
+	outline: none;
+	border-color: var(--acf-border-focus);
+	box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.acf-input.acf-input--error {
+	border-color: var(--acf-error);
+	box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.acf-textarea {
+	resize: vertical;
+	min-height: 140px;
+}
+
+/* Field errors */
+.acf-field-error {
+	display: block;
+	margin-top: 5px;
+	font-size: 0.8rem;
+	color: var(--acf-error);
+	min-height: 1em;
+}
+
+/* Submit button */
+.acf-submit-row {
+	margin-top: 8px;
+}
+
+.acf-submit-btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 32px;
+	background: var(--acf-primary);
+	color: #fff;
+	border: none;
+	border-radius: var(--acf-radius);
+	font-family: var(--acf-font);
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background var(--acf-transition), transform var(--acf-transition);
+}
+
+.acf-submit-btn:hover:not(:disabled) {
+	background: var(--acf-primary-dark);
+	transform: translateY(-1px);
+}
+
+.acf-submit-btn:active:not(:disabled) {
+	transform: translateY(0);
+}
+
+.acf-submit-btn:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+/* Spinner */
+.acf-btn-spinner {
+	display: none;
+	width: 16px;
+	height: 16px;
+	border: 2px solid rgba(255,255,255,0.4);
+	border-top-color: #fff;
+	border-radius: 50%;
+	animation: acf-spin 0.65s linear infinite;
+}
+
+.acf-submit-btn.acf-loading .acf-btn-spinner,
+#acf-submit-btn.acf-loading .acf-btn-spinner {
+	display: inline-block;
+}
+
+@keyframes acf-spin {
+	to { transform: rotate(360deg); }
+}

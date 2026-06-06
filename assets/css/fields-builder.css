@@ -1,0 +1,263 @@
+/* ── Ateculus Contact Form — Fields Builder Admin Styles ── */
+
+.acfb-card {
+	padding: 0 !important;
+	overflow: hidden;
+}
+
+/* Toolbar */
+.acfb-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 24px;
+	border-bottom: 1px solid #e0e0e0;
+	background: #f8f9fa;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.acfb-toolbar .description {
+	margin: 0;
+	color: #666;
+}
+
+.acfb-toolbar-btns {
+	display: flex;
+	gap: 8px;
+}
+
+/* Field list */
+.acfb-field-list {
+	min-height: 60px;
+}
+
+.acfb-empty {
+	padding: 40px;
+	text-align: center;
+	color: #999;
+	font-style: italic;
+}
+
+/* Field item */
+.acfb-field-item {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.acfb-field-item:last-child {
+	border-bottom: none;
+}
+
+.acfb-field-item.ui-sortable-helper {
+	background: #fff;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+	border-radius: 6px;
+}
+
+.acfb-field-item.ui-sortable-placeholder {
+	background: #f0f4ff;
+	visibility: visible !important;
+}
+
+/* Field summary row */
+.acfb-field-summary {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 14px 24px;
+	background: #fff;
+	transition: background 0.15s;
+}
+
+.acfb-field-summary:hover {
+	background: #fafafa;
+}
+
+.acfb-drag-handle {
+	cursor: ns-resize;
+	color: #bbb;
+	font-size: 18px;
+	flex-shrink: 0;
+}
+
+.acfb-drag-handle:hover {
+	color: #888;
+}
+
+.acfb-field-label-display {
+	flex: 1;
+	font-weight: 600;
+	font-size: 14px;
+	color: #1a1a2e;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* Badges */
+.acfb-badges {
+	display: flex;
+	gap: 6px;
+	flex-shrink: 0;
+}
+
+.acfb-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 20px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.acfb-type-badge {
+	background: #e8eaf6;
+	color: #3949ab;
+}
+
+.acfb-width-badge {
+	background: #e8f5e9;
+	color: #2e7d32;
+}
+
+.acfb-required-badge {
+	background: #fff3e0;
+	color: #e65100;
+}
+
+/* Field actions */
+.acfb-field-actions {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex-shrink: 0;
+}
+
+.acfb-delete-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #bbb;
+	font-size: 18px;
+	padding: 4px;
+	border-radius: 4px;
+	transition: color 0.15s, background 0.15s;
+	line-height: 1;
+}
+
+.acfb-delete-btn:hover {
+	color: #dc2626;
+	background: #fef2f2;
+}
+
+/* Edit panel */
+.acfb-field-edit {
+	background: #f8f9fb;
+	border-top: 1px solid #e8eaf0;
+}
+
+.acfb-edit-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px 20px;
+	padding: 20px 24px 4px;
+}
+
+.acfb-edit-col {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.acfb-edit-col label {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #555;
+}
+
+.acfb-edit-col label .description {
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: 0;
+	font-size: 11px;
+	color: #999;
+}
+
+.acfb-edit-col input[type="text"],
+.acfb-edit-col input[type="email"],
+.acfb-edit-col select,
+.acfb-edit-col textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.acfb-edit-col input[readonly] {
+	background: #f0f0f0;
+	color: #888;
+	cursor: not-allowed;
+}
+
+.acfb-col-full {
+	grid-column: 1 / -1;
+}
+
+.acfb-col-required {
+	grid-column: 1 / -1;
+}
+
+.acfb-col-required label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-transform: none;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0;
+	color: #333;
+	cursor: pointer;
+}
+
+.acfb-col-required input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	margin: 0;
+}
+
+/* Edit footer */
+.acfb-edit-footer {
+	padding: 12px 24px 16px;
+	display: flex;
+	gap: 8px;
+}
+
+/* Save bar */
+.acfb-save-bar {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 24px;
+	border-top: 1px solid #e0e0e0;
+	background: #f8f9fa;
+}
+
+.acfb-status {
+	font-size: 13px;
+	font-weight: 500;
+	transition: opacity 0.3s;
+}
+
+.acfb-status.success { color: #16a34a; }
+.acfb-status.error   { color: #dc2626; }
+
+@media (max-width: 700px) {
+	.acfb-edit-grid {
+		grid-template-columns: 1fr;
+	}
+	.acfb-badges {
+		display: none;
+	}
+}

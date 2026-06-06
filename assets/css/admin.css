@@ -1,0 +1,152 @@
+.acf-settings-wrap {
+	max-width: 1200px;
+}
+
+.acf-settings-layout {
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	gap: 24px;
+	align-items: start;
+	margin-top: 20px;
+}
+
+@media (max-width: 960px) {
+	.acf-settings-layout {
+		grid-template-columns: 1fr;
+	}
+}
+
+.acf-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.acf-card h2,
+.acf-card h3 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #1a1a2e;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.acf-shortcode-info {
+	background: #f0f4ff;
+	border-color: #c7d2fe;
+}
+
+.acf-shortcode-tag {
+	display: inline-block;
+	background: #1a1a2e;
+	color: #a5b4fc;
+	padding: 8px 16px;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-family: monospace;
+	margin-top: 4px;
+}
+
+.acf-provider-notice {
+	background: #fffbeb;
+	border: 1px solid #fde68a;
+	border-radius: 6px;
+	padding: 10px 14px;
+	margin-bottom: 16px;
+	font-size: 0.875rem;
+	color: #92400e;
+}
+
+/* Sidebar cards */
+.acf-settings-sidebar .acf-card {
+	font-size: 0.875rem;
+	line-height: 1.6;
+}
+
+.acf-help-card ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.acf-help-card li {
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.acf-help-card li:last-child {
+	border-bottom: none;
+}
+
+.acf-theme-card code {
+	display: block;
+	background: #f5f5f5;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 6px 10px;
+	font-size: 0.8rem;
+	margin: 4px 0 8px;
+	word-break: break-all;
+}
+
+/* Make form-table cleaner inside cards */
+.acf-card .form-table th {
+	padding-left: 0;
+	font-weight: 600;
+	color: #374151;
+}
+
+/* Highlight disabled/hidden SMTP rows */
+#acf-smtp-settings.acf-smtp-hidden {
+	opacity: 0.4;
+	pointer-events: none;
+}
+
+/* Notification channels */
+.acf-notify-channel {
+	padding: 14px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.acf-notify-channel:last-child {
+	border-bottom: none;
+}
+
+.acf-notify-label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.acf-notify-label input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	flex-shrink: 0;
+}
+
+.acf-notify-icon {
+	font-size: 18px;
+	line-height: 1;
+}
+
+.acf-notify-desc {
+	color: #888;
+	font-weight: 400;
+}
+
+.acf-notify-url {
+	margin-top: 10px;
+	margin-left: 26px;
+}
+
+.acf-notify-url .large-text {
+	margin-bottom: 4px;
+}
