@@ -60,7 +60,7 @@ The **Fields** tab lets you build a custom field set with drag-to-reorder suppor
 
 ## License
 
-GPL-2.0+. See [LICENSE](LICENSE) for details.
+Free for personal use. Commercial use requires written authorization — see [LICENSE](LICENSE) for full terms.
 
 ## Author
 
